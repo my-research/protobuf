@@ -1,17 +1,24 @@
+syntax = "proto3";
+
+package addressBook;
+
+option java_outer_classname = 'AddressBookProtos';
+option java_package = 'com.github.dhslrl321';
+
 message Person {
   optional string name = 1;
-  optional int32 id = 2;
+  optional int64 id = 2;
   optional string email = 3;
+
+  message PhoneNumber {
+    optional string number = 1;
+    optional PhoneType type = 2;
+  }
 
   enum PhoneType {
     MOBILE = 0;
     HOME = 1;
     WORK = 2;
-  }
-
-  message PhoneNumber {
-    optional string number = 1;
-    optional PhoneType type = 2 [default = HOME];
   }
 
   repeated PhoneNumber phones = 4;

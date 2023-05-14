@@ -1,9 +1,9 @@
 ### 바로가기
 
-- [proto files]()
-- [Person 을 만들고 java class 생성하기]()
-- [좀 더 복잡한 스키마의 proto]()
-- [proto 객체의 serialization/deserialization]()
+- [proto files](https://github.com/my-research/protobuf/tree/master/src/main/proto)
+- [Person 을 만들고 java class 생성하기](https://github.com/my-research/protobuf/blob/master/src/test/java/com/github/dhslrl321/app/step1/PersonTest.java)
+- [좀 더 복잡한 스키마의 proto](https://github.com/my-research/protobuf/blob/master/src/test/java/com/github/dhslrl321/app/step2/AddressBookTest.java)
+- [proto 객체의 serialization/deserialization](https://github.com/my-research/protobuf/blob/master/src/test/java/com/github/dhslrl321/app/step3/Byte_SerializeTest.java)
 
 
 # Protobuf

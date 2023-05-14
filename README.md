@@ -5,7 +5,6 @@
 - [좀 더 복잡한 스키마의 proto](https://github.com/my-research/protobuf/blob/master/src/test/java/com/github/dhslrl321/app/step2/AddressBookTest.java)
 - [proto 객체의 serialization/deserialization](https://github.com/my-research/protobuf/blob/master/src/test/java/com/github/dhslrl321/app/step3/Byte_SerializeTest.java)
 
-
 # Protobuf
 
 protocol buffers is language, platform neutral data serialization format by google
@@ -21,7 +20,19 @@ If you want to use it simply, follow these steps
 2. generate programming language code from schema file
 3. use
 
-# without gradle, use raw proto compiler
+## with gradle
+
+```shell
+./gradlew clean build
+```
+
+or
+
+```shell
+./gradlew generateProto
+```
+
+## without gradle, use raw proto compiler
 
 ```shell
 brew install protobuf

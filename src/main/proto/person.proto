@@ -1,0 +1,20 @@
+syntax = "proto3"; // version 인데 명시하지 않으면 proto compiler 가 proto2 로 자동 인식
+
+/**
+ package
+ to prevent naming conflict
+ */
+package person;
+option java_outer_classname = 'PersonProtos';
+option java_package = 'com.github.dhslrl321';
+/**
+  prevent using legacy wrapping outer class
+ */
+option java_multiple_files = true;
+
+// message 객체
+message Person {
+  int64 id = 1; // unique tag
+  string name = 2; // 5억 사이의 수를 정의해줘야 함. 한 번 사용되면 바꾸지 못함
+  int32 age = 3; // 10,000 ~ 19,999 사이 숫자는 사용하지 못함, reserved number
+}

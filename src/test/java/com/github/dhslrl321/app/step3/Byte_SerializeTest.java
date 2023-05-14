@@ -16,6 +16,8 @@ public class Byte_SerializeTest {
 
         AddressBook actual = AddressBook.parseFrom(addressBook.toByteArray());
 
+        System.out.println("actual = " + actual);
+
         assertThat(actual).isEqualTo(addressBook);
     }
 }

@@ -10,7 +10,7 @@
 protocol buffers is language, platform neutral data serialization format by google
 
 - faster and compact by using binary format
-- extendable for version compatibility
+- provide forward & backward compatibility methodology
 
 # put it to use
 

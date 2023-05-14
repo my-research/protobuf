@@ -16,6 +16,8 @@ public class PersonTest {
                 .setAge(10)
                 .build();
 
+        System.out.println("actual = " + actual);
+
         assertThat(actual.getId()).isEqualTo(1004);
         assertThat(actual.getName()).isEqualTo("jang");
         assertThat(actual.getAge()).isEqualTo(10);

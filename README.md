@@ -12,7 +12,11 @@ protocol buffers is language, platform neutral data serialization format by goog
 - faster and compact by using binary format
 - provide forward & backward compatibility methodology
 
-> NOTE! protobuf 는 단지 forward, backward compatibility 를 **지원할 수 있는 방법**을 알려주며 \n language, platform neutral 한 serialization/deserialization 도구일 뿐 그 자체로 버전 관리나 schema 관리를 하지 않는다
+> NOTE! protobuf 는 단지 forward, backward compatibility 를 **지원할 수 있는 방법**을 알려주며 language, platform neutral 한 serialization/deserialization 도구일 뿐 그 자체로 버전 관리나 schema 관리를 하지 않는다
+
+# how it works?
+
+<img width="655" alt="image" src="https://github.com/my-research/protobuf/assets/48385288/f4a50f1e-7ed6-4969-a25c-ec42aac990a7">
 
 # put it to use
 
@@ -59,6 +63,7 @@ protoc --java_out=src/main/java ./proto/person.proto
 
 - 음.. 일단 그냥 oas 하는거랑 똑같다
   - 일단 swagger 로 oas 를 먼저 해봐서 그런지 사용법에 대해서는 거부감이 없었다. gradle 설정하는데 좀 애를 먹긴 했는데,,
+- 그리고 이건 s/d 와 버전 호환에 대한 방법을 제시할 뿐 그 자체가 버전관리를 하지는 않는다
 - OuterClass 로 static class 접근하는 코드들이 default 라서 좀 귀찮다? 쉽게 잘 안읽힌다
   - 옵션이 있긴 해도 static class 접근하는게 귀찮다
 - Don’t go looking for facilities similar to class inheritance, though – protocol buffers don’t do that.

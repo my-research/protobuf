@@ -12,6 +12,8 @@ protocol buffers is language, platform neutral data serialization format by goog
 - faster and compact by using binary format
 - provide forward & backward compatibility methodology
 
+> NOTE! protobuf 는 단지 forward, backward compatibility 를 **지원할 수 있는 방법**을 알려주며 \n language, platform neutral 한 serialization/deserialization 도구일 뿐 그 자체로 버전 관리나 schema 관리를 하지 않는다
+
 # put it to use
 
 If you want to use it simply, follow these steps
@@ -44,6 +46,9 @@ protoc --java_out={output location} {input location}
 protoc --java_out=src/main/java ./proto/person.proto
 ```
 
+## version supports
+
+- [https://protobuf.dev/support/version-support/#java](https://protobuf.dev/support/version-support/#java)
 
 ### Ref
 

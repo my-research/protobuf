@@ -27,7 +27,6 @@ protobuf {
         artifact = 'com.google.protobuf:protoc:3.21.0'
     }
 }
-
 sourceSets {
     main {
         java {

@@ -18,12 +18,21 @@ repositories {
 
 dependencies {
     implementation 'com.google.protobuf:protobuf-java:3.19.6'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 protobuf {
     protoc {
         artifact = 'com.google.protobuf:protoc:3.21.0'
+    }
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'build/generated/source/proto/**'
+        }
     }
 }
 

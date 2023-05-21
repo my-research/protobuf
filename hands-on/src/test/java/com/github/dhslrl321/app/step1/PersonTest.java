@@ -8,6 +8,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class PersonTest {
     @Test
     void name() {
+
         Person.Builder personBuilder = Person.newBuilder();
 
         Person actual = personBuilder
